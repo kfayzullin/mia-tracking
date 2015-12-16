@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5438AC9B1C43DC1C007D3DD0 /* TrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5438AC9A1C43DC1C007D3DD0 /* TrackingTests.m */; };
+		5438AC9D1C43DC1C007D3DD0 /* libTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 544CA0FA1C1ADDF80013A1EF /* libTracking.a */; };
+		544CA1081C1ADE510013A1EF /* MixpanelTrackerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 544CA1071C1ADE510013A1EF /* MixpanelTrackerModule.m */; };
+		544CA10B1C1ADE7D0013A1EF /* TrackingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 544CA10A1C1ADE7D0013A1EF /* TrackingLayer.m */; };
+		544CA10C1C1AE1730013A1EF /* TrackingLayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 544CA1091C1ADE7D0013A1EF /* TrackingLayer.h */; };
+		54C26A4C1C1F149600DD9671 /* GoogleAnalyticsTrackerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C26A4B1C1F149600DD9671 /* GoogleAnalyticsTrackerModule.m */; };
+		54FA453C1C57B2F7008B0BDA /* TrackingLayerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FA453B1C57B2F7008B0BDA /* TrackingLayerConfiguration.m */; };
+		54FA453D1C57B449008B0BDA /* TrackingLayerConfiguration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54FA453A1C57B2F7008B0BDA /* TrackingLayerConfiguration.h */; };
+		54FA45401C57B63D008B0BDA /* MixpanelConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FA453F1C57B63D008B0BDA /* MixpanelConfiguration.m */; };
+		54FA45451C57BF12008B0BDA /* GoogleAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FA45441C57BF12008B0BDA /* GoogleAnalyticsConfiguration.m */; };
+		A7DAF9DFE2516FCD74317AEC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B85B5A54E99A870DC74189 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5438AC9E1C43DC1C007D3DD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 544CA0F21C1ADDF80013A1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544CA0F91C1ADDF80013A1EF;
+			remoteInfo = Tracking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		544CA0F81C1ADDF80013A1EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				544CA10C1C1AE1730013A1EF /* TrackingLayer.h in CopyFiles */,
+				54FA453D1C57B449008B0BDA /* TrackingLayerConfiguration.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D888D760096110659B8B4EF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5438AC921C43D9D0007D3DD0 /* TrackingLayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackingLayerTest.m; path = TrackingTests/TrackingLayerTest.m; sourceTree = "<group>"; };
+		5438AC981C43DC1C007D3DD0 /* TrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5438AC9A1C43DC1C007D3DD0 /* TrackingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackingTests.m; sourceTree = "<group>"; };
+		5438AC9C1C43DC1C007D3DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544CA0FA1C1ADDF80013A1EF /* libTracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTracking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		544CA1061C1ADE510013A1EF /* MixpanelTrackerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelTrackerModule.h; sourceTree = "<group>"; };
+		544CA1071C1ADE510013A1EF /* MixpanelTrackerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixpanelTrackerModule.m; sourceTree = "<group>"; };
+		544CA1091C1ADE7D0013A1EF /* TrackingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingLayer.h; sourceTree = "<group>"; };
+		544CA10A1C1ADE7D0013A1EF /* TrackingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingLayer.m; sourceTree = "<group>"; };
+		544CA10D1C1AE4280013A1EF /* Tracking.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tracking.podspec; sourceTree = "<group>"; };
+		54C26A4A1C1F149600DD9671 /* GoogleAnalyticsTrackerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAnalyticsTrackerModule.h; sourceTree = "<group>"; };
+		54C26A4B1C1F149600DD9671 /* GoogleAnalyticsTrackerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAnalyticsTrackerModule.m; sourceTree = "<group>"; };
+		54FA453A1C57B2F7008B0BDA /* TrackingLayerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingLayerConfiguration.h; sourceTree = "<group>"; };
+		54FA453B1C57B2F7008B0BDA /* TrackingLayerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingLayerConfiguration.m; sourceTree = "<group>"; };
+		54FA453E1C57B63D008B0BDA /* MixpanelConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelConfiguration.h; sourceTree = "<group>"; };
+		54FA453F1C57B63D008B0BDA /* MixpanelConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixpanelConfiguration.m; sourceTree = "<group>"; };
+		54FA45431C57BF12008B0BDA /* GoogleAnalyticsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		54FA45441C57BF12008B0BDA /* GoogleAnalyticsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAnalyticsConfiguration.m; sourceTree = "<group>"; };
+		69B85B5A54E99A870DC74189 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C491D22371C74F77EFC697BB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5438AC951C43DC1C007D3DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5438AC9D1C43DC1C007D3DD0 /* libTracking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544CA0F71C1ADDF80013A1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DAF9DFE2516FCD74317AEC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D023ACB7A91F84BAF70EAA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D888D760096110659B8B4EF /* Pods.debug.xcconfig */,
+				C491D22371C74F77EFC697BB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5438AC911C43D944007D3DD0 /* TrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				5438AC921C43D9D0007D3DD0 /* TrackingLayerTest.m */,
+			);
+			name = TrackingTests;
+			sourceTree = "<group>";
+		};
+		5438AC991C43DC1C007D3DD0 /* TrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				5438AC9A1C43DC1C007D3DD0 /* TrackingTests.m */,
+				5438AC9C1C43DC1C007D3DD0 /* Info.plist */,
+			);
+			path = TrackingTests;
+			sourceTree = "<group>";
+		};
+		544CA0F11C1ADDF80013A1EF = {
+			isa = PBXGroup;
+			children = (
+				544CA10D1C1AE4280013A1EF /* Tracking.podspec */,
+				544CA0FC1C1ADDF80013A1EF /* Tracking */,
+				5438AC911C43D944007D3DD0 /* TrackingTests */,
+				5438AC991C43DC1C007D3DD0 /* TrackingTests */,
+				544CA0FB1C1ADDF80013A1EF /* Products */,
+				1D023ACB7A91F84BAF70EAA0 /* Pods */,
+				9FDD99A4ABC3BA47283D2750 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		544CA0FB1C1ADDF80013A1EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				544CA0FA1C1ADDF80013A1EF /* libTracking.a */,
+				5438AC981C43DC1C007D3DD0 /* TrackingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		544CA0FC1C1ADDF80013A1EF /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				54CC25FA1C21A34B00B7EF58 /* provider */,
+				544CA1091C1ADE7D0013A1EF /* TrackingLayer.h */,
+				544CA10A1C1ADE7D0013A1EF /* TrackingLayer.m */,
+				54FA453A1C57B2F7008B0BDA /* TrackingLayerConfiguration.h */,
+				54FA453B1C57B2F7008B0BDA /* TrackingLayerConfiguration.m */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		54CC25FA1C21A34B00B7EF58 /* provider */ = {
+			isa = PBXGroup;
+			children = (
+				54FA45411C57BEDF008B0BDA /* mixpanel */,
+				54FA45421C57BEE6008B0BDA /* google */,
+			);
+			name = provider;
+			sourceTree = "<group>";
+		};
+		54FA45411C57BEDF008B0BDA /* mixpanel */ = {
+			isa = PBXGroup;
+			children = (
+				544CA1061C1ADE510013A1EF /* MixpanelTrackerModule.h */,
+				544CA1071C1ADE510013A1EF /* MixpanelTrackerModule.m */,
+				54FA453E1C57B63D008B0BDA /* MixpanelConfiguration.h */,
+				54FA453F1C57B63D008B0BDA /* MixpanelConfiguration.m */,
+			);
+			name = mixpanel;
+			sourceTree = "<group>";
+		};
+		54FA45421C57BEE6008B0BDA /* google */ = {
+			isa = PBXGroup;
+			children = (
+				54C26A4A1C1F149600DD9671 /* GoogleAnalyticsTrackerModule.h */,
+				54C26A4B1C1F149600DD9671 /* GoogleAnalyticsTrackerModule.m */,
+				54FA45431C57BF12008B0BDA /* GoogleAnalyticsConfiguration.h */,
+				54FA45441C57BF12008B0BDA /* GoogleAnalyticsConfiguration.m */,
+			);
+			name = google;
+			sourceTree = "<group>";
+		};
+		9FDD99A4ABC3BA47283D2750 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69B85B5A54E99A870DC74189 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5438AC971C43DC1C007D3DD0 /* TrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5438ACA01C43DC1C007D3DD0 /* Build configuration list for PBXNativeTarget "TrackingTests" */;
+			buildPhases = (
+				5438AC941C43DC1C007D3DD0 /* Sources */,
+				5438AC951C43DC1C007D3DD0 /* Frameworks */,
+				5438AC961C43DC1C007D3DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5438AC9F1C43DC1C007D3DD0 /* PBXTargetDependency */,
+			);
+			name = TrackingTests;
+			productName = TrackingTests;
+			productReference = 5438AC981C43DC1C007D3DD0 /* TrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		544CA0F91C1ADDF80013A1EF /* Tracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544CA1031C1ADDF80013A1EF /* Build configuration list for PBXNativeTarget "Tracking" */;
+			buildPhases = (
+				AA114C8B42E84C1FB59E0F54 /* Check Pods Manifest.lock */,
+				544CA0F61C1ADDF80013A1EF /* Sources */,
+				544CA0F71C1ADDF80013A1EF /* Frameworks */,
+				544CA0F81C1ADDF80013A1EF /* CopyFiles */,
+				C3624EC8A75B02F1E9DE80BA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tracking;
+			productName = Tracking;
+			productReference = 544CA0FA1C1ADDF80013A1EF /* libTracking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		544CA0F21C1ADDF80013A1EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = P7S1;
+				TargetAttributes = {
+					5438AC971C43DC1C007D3DD0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					544CA0F91C1ADDF80013A1EF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 544CA0F51C1ADDF80013A1EF /* Build configuration list for PBXProject "Tracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 544CA0F11C1ADDF80013A1EF;
+			productRefGroup = 544CA0FB1C1ADDF80013A1EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				544CA0F91C1ADDF80013A1EF /* Tracking */,
+				5438AC971C43DC1C007D3DD0 /* TrackingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5438AC961C43DC1C007D3DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA114C8B42E84C1FB59E0F54 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3624EC8A75B02F1E9DE80BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5438AC941C43DC1C007D3DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5438AC9B1C43DC1C007D3DD0 /* TrackingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544CA0F61C1ADDF80013A1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FA45451C57BF12008B0BDA /* GoogleAnalyticsConfiguration.m in Sources */,
+				54C26A4C1C1F149600DD9671 /* GoogleAnalyticsTrackerModule.m in Sources */,
+				544CA10B1C1ADE7D0013A1EF /* TrackingLayer.m in Sources */,
+				544CA1081C1ADE510013A1EF /* MixpanelTrackerModule.m in Sources */,
+				54FA45401C57B63D008B0BDA /* MixpanelConfiguration.m in Sources */,
+				54FA453C1C57B2F7008B0BDA /* TrackingLayerConfiguration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5438AC9F1C43DC1C007D3DD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 544CA0F91C1ADDF80013A1EF /* Tracking */;
+			targetProxy = 5438AC9E1C43DC1C007D3DD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5438ACA11C43DC1C007D3DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.prosiebensat1.TrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5438ACA21C43DC1C007D3DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.prosiebensat1.TrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		544CA1011C1ADDF80013A1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		544CA1021C1ADDF80013A1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		544CA1041C1ADDF80013A1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D888D760096110659B8B4EF /* Pods.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		544CA1051C1ADDF80013A1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C491D22371C74F77EFC697BB /* Pods.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5438ACA01C43DC1C007D3DD0 /* Build configuration list for PBXNativeTarget "TrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5438ACA11C43DC1C007D3DD0 /* Debug */,
+				5438ACA21C43DC1C007D3DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544CA0F51C1ADDF80013A1EF /* Build configuration list for PBXProject "Tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544CA1011C1ADDF80013A1EF /* Debug */,
+				544CA1021C1ADDF80013A1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544CA1031C1ADDF80013A1EF /* Build configuration list for PBXNativeTarget "Tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544CA1041C1ADDF80013A1EF /* Debug */,
+				544CA1051C1ADDF80013A1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 544CA0F21C1ADDF80013A1EF /* Project object */;
+}

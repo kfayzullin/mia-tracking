@@ -1,0 +1,11 @@
+platform:ios, '7.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod 'React', :path => '../../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTNetwork',
+    'RCTWebSocket'
+]
+
+pod 'Mixpanel'

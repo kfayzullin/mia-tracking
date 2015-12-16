@@ -1,0 +1,29 @@
+{
+  "name": "TrackingLayer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react-native": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-jest": "*",
+    "jest-cli": "*"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/../node_modules/react-native/jestSupport/preprocessor.js",
+    "setupEnvScriptFile": "<rootDir>/../node_modules/react-native/jestSupport/env.js",
+    "testFileExtensions": [
+      "js"
+    ],
+    "rootDir": "js",
+    "unmockedModulePathPatterns": [
+      "js"
+    ],
+    "testRunner": "<rootDir>/../node_modules/jest-cli/src/testRunners/jasmine/jasmine2.js",
+    "verbose": true
+  }
+}
