@@ -68,22 +68,21 @@ The mia-tracking repository contains a very basic test application that is used 
 
 ## Looking at the Demo Code
 Out of the box mia-tracking implements an example tracking logic that detects sessions based on an idle timeout. If the application does not generate a new micro event within 1 min, a new session is started and a corresponding event is send to the Mixpanel tracking API.
-This sample shows many of the features of the mia-tracking setup, such as:
+This sample shows many of the features of mia-tracking and React Native, such as:
 - Handing over the micro events from the native application to the JavaScript environment
-    iOS: ReactView.m
+  - iOS: ReactView.m
 ```
     double timeInMs = CACurrentMediaTime() * 1000;
     [self.trackingLayer sendEvent:@{ @"time": @(timeInMs) }];
 ```
-    Android: FullscreenActivity.java
+  - Android: FullscreenActivity.java
 ```
     final WritableMap microEvent = Arguments.createMap();
     microEvent.putDouble("time", new Date().getTime());
     trackingLayer.sendEvent(microEvent);
 ```
 
-- Implementing the tracking logic in JavaScript
-    Tracker.js and SesionDetection.js
+- Implementing the tracking logic in JavaScript: Tracker.js and SesionDetection.js
 ```
     DeviceEventEmitter.addListener('MicroEvent', (event) => {
         // For this demo code, we simply hook up the session detection here.
@@ -91,8 +90,7 @@ This sample shows many of the features of the mia-tracking setup, such as:
     });
 ```
 
-- Using native modules for the tracking providers in JavaScript
-    SessionDetection.js
+- Using native modules for the tracking providers in JavaScript: SessionDetection.js
 ```
     var payload = {
         sessionId: this.generateNewSessionId(),
