@@ -17,6 +17,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+
+import java.util.Date;
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -122,12 +127,14 @@ public class FullscreenActivity extends Activity {
             }
         });
 
+        // Set up the button that triggers a micro event
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
-                trackingLayer.sendEvent();
+                final WritableMap microEvent = Arguments.createMap();
+                microEvent.putDouble("time", new Date().getTime());
+                trackingLayer.sendEvent(microEvent);
             }
         });
     }

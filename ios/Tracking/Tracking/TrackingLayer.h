@@ -13,6 +13,6 @@
 
 - (instancetype)initWithConfiguration:(TrackingLayerConfiguration *)config;
 
-- (void)sendEvent:(NSString *)eventName withPayload:(NSDictionary *)payload;
+- (void)sendEvent:(NSDictionary *)event;
 
 @end

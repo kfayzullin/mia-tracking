@@ -1,6 +1,7 @@
 'use strict';
 
-import Tracker from './tracker';
+var Tracker = require('./Tracker');
 
-let tracker = new Tracker();
-tracker.init();
+// Initialize a new tracker to setup the listening for micro events.
+var tracker = new Tracker();
+tracker.startListener();

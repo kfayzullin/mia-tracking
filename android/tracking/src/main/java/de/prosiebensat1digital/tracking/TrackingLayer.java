@@ -8,6 +8,9 @@ import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 
+import java.util.Date;
+import java.util.Map;
+
 /**
  * Provides functionality to configure tracking providers and to process micro-tracking events.
  * The tracking layer transforms the micro events into higher-level events for individual tracking
@@ -47,16 +50,11 @@ public class TrackingLayer {
     }
 
     /**
-     * Sends a test event to verify communication with the tracking layer.
+     * Sends a micro event to the tracking logic.
+     * @param event the tracking event.
      */
-    public void sendEvent() {
-        WritableMap trackEvent = Arguments.createMap();
-        trackEvent.putString("event", "TrackMedia");
-
-        WritableMap payload = Arguments.createMap();
-        payload.putString("videoId", "1234552");
-        trackEvent.putMap("payload", payload);
-        nativeModuleReactPackage.emit("Track", trackEvent);
+    public void sendEvent(final WritableMap event) {
+        nativeModuleReactPackage.emit("MicroEvent", event);
     }
 
     /**

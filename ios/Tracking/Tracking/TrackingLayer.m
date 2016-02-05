@@ -43,8 +43,8 @@
     return nil;
 }
 
-- (void)sendEvent:(NSString *)eventName withPayload:(NSDictionary *)payload {
-    [self.bridge.eventDispatcher sendDeviceEventWithName:eventName body:payload];
+- (void)sendEvent:(NSDictionary *)event {
+    [self.bridge.eventDispatcher sendDeviceEventWithName:@"MicroEvent" body:event];
 }
 
 @end

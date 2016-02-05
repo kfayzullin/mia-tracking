@@ -26,10 +26,8 @@
 }
 
 - (void)sendEvent {
-    NSDictionary *event = @{ @"event": @"TrackMedia",
-                             @"payload": @{ @"videoId": @"1234552"}};
-
-    [self.trackingLayer sendEvent:@"Track" withPayload:event];
+    double timeInMs = CACurrentMediaTime() * 1000;
+    [self.trackingLayer sendEvent:@{ @"time": @(timeInMs) }];
 }
 
 @end
