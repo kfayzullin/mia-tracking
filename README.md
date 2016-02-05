@@ -8,7 +8,9 @@ Use multiple project folders to keep track of all your apis and connect them by 
 # mia-tracking
 
 The mia-tracking repository provides a general purpose tracking layer integration into mobile apps based on React-Native, Mixpanel and
-JavaScript.
+JavaScript. This repository consists of two applications for both Android and iOS:
+- The actual tracking layer library
+- A test application to trigger a simple micro event in native code and process it within the tracking logic in JavaScript and output it to Mixpanel
 
 ## Basic Setup using ReactNative
 - Follow installation instructions from https://facebook.github.io/react-native/docs/getting-started.html
