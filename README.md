@@ -7,11 +7,18 @@ Use multiple project folders to keep track of all your apis and connect them by 
 
 # mia-tracking
 
-The mia-tracking repository provides a general purpose tracking layer integration into mobile apps based on React-Native and
+The mia-tracking repository provides a general purpose tracking layer integration into mobile apps based on React-Native, Mixpanel and
 JavaScript.
 
 ## Basic Setup using ReactNative
 - Follow installation instructions from https://facebook.github.io/react-native/docs/getting-started.html
+
+## Mixpanel Setup
+- The tracking layer is currently based on Mixpanel. It can be extended to use other tracking providers as well, but out-of-the-box, a Mixpanel project is required
+- The Mixpanel project to be used by the tracking layer is configured within the test app:
+- - on iOS: ios/TestApp/TestApp/ReactView.m
+- - on Android: android/app/src/main/java/de/prosiebensat1digital/testapp/FullscreenActivity.java
+- Search for "YOUR_MIXPANEL_PROJECT_TOKEN" and replace it with the token from the Mixpanel project settings
 
 ## iOS Setup
 - Call 'pod install' in 'ios/Tracking'
