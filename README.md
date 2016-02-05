@@ -16,8 +16,8 @@ JavaScript.
 ## Mixpanel Setup
 - The tracking layer is currently based on Mixpanel. It can be extended to use other tracking providers as well, but out-of-the-box, a Mixpanel project is required
 - The Mixpanel project to be used by the tracking layer is configured within the test app:
-- - on iOS: ios/TestApp/TestApp/ReactView.m
-- - on Android: android/app/src/main/java/de/prosiebensat1digital/testapp/FullscreenActivity.java
+    - on iOS: ios/TestApp/TestApp/ReactView.m
+    - on Android: android/app/src/main/java/de/prosiebensat1digital/testapp/FullscreenActivity.java
 - Search for "YOUR_MIXPANEL_PROJECT_TOKEN" and replace it with the token from the Mixpanel project settings
 
 ## iOS Setup
