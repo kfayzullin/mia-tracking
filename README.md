@@ -66,7 +66,7 @@ Many tracking providers offers different types of APIs - often web-based APIs an
 # The Test Project
 The mia-tracking repository contains a very basic test application that is used to generate micro events. By pressing a button in the native UI, a micro event is generated and passed to the JavaScript tracking logic. In this default project, the tracking logic simply keeps track of sessions.
 
-## Looking at the Demo Code
+## Demo Code
 Out of the box mia-tracking implements an example tracking logic that detects sessions based on an idle timeout. If the application does not generate a new micro event within 1 min, a new session is started and a corresponding event is send to the Mixpanel tracking API.
 This sample shows many of the features of mia-tracking and React Native, such as:
 - Handing over the micro events from the native application to the JavaScript environment
